@@ -95,7 +95,6 @@ function details_personal_data_exporter( $email_address, $page ) {
  */
 function application_personal_data_exporter( $email_address, $page ) {
 	$post_query     = _get_wordcamp_posts( 'application', $email_address, $page );
-	$email_keys     = _get_email_postmeta_keys();
 	$data_to_export = [];
 
 	foreach ( (array) $post_query->posts as $post ) {
